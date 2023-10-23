@@ -1,0 +1,132 @@
+h1{
+  font-size: 42px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px;
+}
+
+h2{
+  font-size: 34px;
+  padding: 10px;
+}
+
+
+nav ul li a{
+  color: pink;
+  font-size: 28px;
+  text-decoration-color: aquamarine;
+  font-weight: bold;
+}
+
+nav ul li:hover {
+  background-color: lightcyan;
+}
+
+nav ul li a:focus{
+  color: red;
+}
+
+nav ul li{
+  display: inline-block;
+  padding: 20px 20px 20px 20px;
+  border-radius: 40px;
+  list-style-type: none;
+}
+
+.activePage{
+  color: palevioletred;
+  text-decoration-color: blueviolet;
+  border: 4px blueviolet dashed;
+  border-radius: 20px;
+  padding: 20px;
+  }
+
+.skip{
+  position: absolute;
+  top: -40px;
+}
+
+/* a{
+  position: relative;
+} */
+
+/* .petsPics  */
+
+@media screen and (min-width: 900px){
+.petsPics div{
+  display: grid;
+  grid-template-columns: repeat(4, minmax(140px,500px));
+  /* grid-template-rows: 1fr 1fr; */
+  gap: 20px;
+  border: 2px solid blanchedalmond;
+  grid-auto-flow: dense;
+}
+
+.travelPics div{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(140px,500px));
+  /* grid-template-rows: 1fr 1fr; */
+  gap: 20px;
+  border: 2px solid blanchedalmond;
+  grid-auto-flow: dense;
+}
+
+}
+
+div img, video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+.textblock{
+  background-color: rgba(255, 204, 0, 0.8);
+  padding: 30px;
+  align-items:center;
+  text-align: center;
+  justify-content: center; 
+}
+
+/* p{
+  display: inline-block;
+  block-size: 200px;
+  text-align: center;
+} */
+
+@media screen and (max-width: 900px){
+nav{
+  text-align: right;
+  padding: 30px 0px 30px 0px;
+}
+
+p{
+  font-size: larger;
+}
+
+.petsPics div{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px,500px));
+  /* grid-template-rows: 1fr 1fr; */
+  gap: 20px;
+  border: 2px solid blanchedalmond;
+  grid-auto-flow: dense;
+}
+
+.travelPics div{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px,500px));
+  /* grid-template-rows: 1fr 1fr; */
+  gap: 20px;
+  border: 2px solid blanchedalmond;
+  grid-auto-flow: dense;
+}
+}
+
+figcaption {
+  background-color: #222;
+  color: #fff;
+  font: italic smaller sans-serif;
+  padding: 3px;
+  text-align: center;
+}
