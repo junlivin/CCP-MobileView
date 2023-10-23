@@ -65,7 +65,14 @@ nav ul li{
 .travelPics div{
   display: grid;
   grid-template-columns: repeat(3, minmax(140px,1fr));
-  /* grid-template-rows: 1fr 1fr; */
+  gap: 20px;
+  border: 2px solid blanchedalmond;
+  grid-auto-flow: dense;
+}
+
+.RecipePics div{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(140px,1fr));
   gap: 20px;
   border: 2px solid blanchedalmond;
   grid-auto-flow: dense;
@@ -127,26 +134,33 @@ p{
 .petsPics div{
   display: grid;
   grid-template-columns: repeat(2, minmax(100px,1fr));
-  /* grid-template-rows: 1fr 1fr; */
   gap: 5px;
   border: 2px solid blanchedalmond;
 }
 
 .travelPics div{
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  row-gap: auto;
-  padding-bottom: 40px;
-  /* grid-template-rows: 1fr 1fr; */
-  gap: 5px;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  /* padding-bottom: 40px; */
+  grid-template-rows: 1fr 1fr;
+  row-gap: 40px;
   border: 2px solid blanchedalmond;
 }
+
+.RecipePics div{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(100px,1fr));
+  gap: 10px;
+  border: 2px solid blanchedalmond;
+}
+
 }
 
 figcaption {
   background-color: #222;
   color: #fff;
   font: italic smaller sans-serif;
-  padding: 3px;
+  /* padding: 3px; */
   text-align: center;
 }
