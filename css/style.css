@@ -12,7 +12,7 @@ h2{
 
 
 nav ul li a{
-  color: pink;
+  color: red;
   font-size: 28px;
   text-decoration-color: aquamarine;
   font-weight: bold;
@@ -23,7 +23,7 @@ nav ul li:hover {
 }
 
 nav ul li a:focus{
-  color: red;
+  color: pink;
 }
 
 nav ul li{
@@ -55,7 +55,7 @@ nav ul li{
 @media screen and (min-width: 900px){
 .petsPics div{
   display: grid;
-  grid-template-columns: repeat(4, minmax(140px,500px));
+  grid-template-columns: repeat(4, minmax(140px,1fr));
   /* grid-template-rows: 1fr 1fr; */
   gap: 20px;
   border: 2px solid blanchedalmond;
@@ -64,7 +64,7 @@ nav ul li{
 
 .travelPics div{
   display: grid;
-  grid-template-columns: repeat(3, minmax(140px,500px));
+  grid-template-columns: repeat(3, minmax(140px,1fr));
   /* grid-template-rows: 1fr 1fr; */
   gap: 20px;
   border: 2px solid blanchedalmond;
@@ -88,6 +88,7 @@ div img, video{
   justify-content: center; 
 }
 
+
 /* p{
   display: inline-block;
   block-size: 200px;
@@ -95,9 +96,28 @@ div img, video{
 } */
 
 @media screen and (max-width: 900px){
-nav{
+  h1{
+    font-size: 28px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  h2{
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  nav ul li a{
+    color: red;
+    font-size: 20px;
+    text-decoration-color: aquamarine;
+    font-weight: bold;
+  }
+
+  nav{
   text-align: right;
-  padding: 30px 0px 30px 0px;
+  padding: 10px 0px 10px 0px;
 }
 
 p{
@@ -121,6 +141,7 @@ p{
   border: 2px solid blanchedalmond;
   grid-auto-flow: dense;
 }
+
 }
 
 figcaption {
