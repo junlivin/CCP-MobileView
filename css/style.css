@@ -3,13 +3,18 @@ h1{
   text-transform: uppercase;
   text-align: center;
   padding: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h2{
   font-size: 34px;
   padding: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+h3, p, nav ul li, li{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 nav ul li a{
   color: red;
@@ -95,7 +100,13 @@ div img, video{
   justify-content: center; 
 }
 
-
+.textblockTravel{
+  background-color: rgba(99, 211, 255, 0.8);
+  padding: 30px;
+  align-items:center;
+  text-align: center;
+  justify-content: center; 
+}
 /* p{
   display: inline-block;
   block-size: 200px;
@@ -163,4 +174,11 @@ figcaption {
   font: italic smaller sans-serif;
   /* padding: 3px; */
   text-align: center;
+}
+
+@media (prefers-reduced-motion) {
+  /* styles to apply if a user's device settings are set to reduced motion */
+  .gif {
+    display: none;
+}
 }
